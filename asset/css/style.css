@@ -1,0 +1,713 @@
+/* ========================================
+   Global Reset
+======================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   Root Variables
+======================================== */
+
+:root {
+    --primary-color: #f58b82;
+    --primary-hover: #ef776e;
+
+    --secondary-color: #40375f;
+    --text-color: #40375f;
+
+    --bg-light: #ffffff;
+    --bg-dark: #27233a;
+
+    --white-color: #ffffff;
+    --light-color: #cecece;
+
+    --border-color: #e8e8e8;
+
+    --shadow-light: rgba(39, 35, 58, 0.05);
+}
+
+
+/* ========================================
+   Body
+======================================== */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-light);
+    color: var(--text-color);
+}
+
+
+/* ========================================
+   Common Elements
+======================================== */
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+input,
+input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+button,
+.btn {
+    outline: none;
+    border: none;
+}
+
+
+/* ========================================
+   Header Section
+======================================== */
+
+.header-section {
+    width: 100%;
+
+    background: var(--white-color);
+
+    border-top: 1px solid rgba(64, 55, 95, 0.08);
+    border-bottom: 1px solid rgba(64, 55, 95, 0.08);
+
+    box-shadow: 0 2px 15px var(--shadow-light);
+
+    position: relative;
+    z-index: 999;
+}
+
+
+/* ========================================
+   Navbar
+======================================== */
+
+.custom-navbar {
+    min-height: 78px;
+    padding: 0px 0;
+}
+
+
+/* ========================================
+   Logo
+======================================== */
+
+.logo-area {
+    width: 160px !important;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+.logo-area img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /* object-fit: contain; */
+    object-position: left center;
+
+    transition: transform 0.3s ease;
+}
+
+.logo-area:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   Main Navigation
+======================================== */
+
+.main-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.main-menu .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu .nav-link {
+    position: relative;
+
+    padding: 8px 13px !important;
+
+    font-size: 11px;
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Navigation Underline */
+
+.main-menu .nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 13px;
+    bottom: 2px;
+
+    width: 0;
+    height: 1.5px;
+
+    /* background: var(--primary-color); */
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* Navigation Hover */
+
+.main-menu .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.main-menu .nav-link:hover::after {
+    width: calc(100% - 26px);
+}
+
+
+/* Active Navigation */
+
+.main-menu .nav-link.active {
+    color: var(--primary-color);
+}
+
+.main-menu .nav-link.active::after {
+    width: calc(100% - 26px);
+}
+
+
+/* ========================================
+   Let's Talk Button
+======================================== */
+
+.header-action {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.talk-btn {
+    min-width: 72px;
+    height: 30px;
+
+    padding: 0 13px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    background: var(--primary-color);
+    color: var(--white-color) !important;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    box-shadow:
+        0 4px 10px rgba(245, 139, 130, 0.18);
+
+    transition: all 0.3s ease;
+
+    transform: translateX(5px);
+}
+
+
+/* Button Icon */
+
+.talk-btn i {
+    font-size: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Button Hover */
+
+.talk-btn:hover {
+    background: var(--primary-hover);
+
+    color: var(--white-color);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(245, 139, 130, 0.25);
+}
+
+.talk-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   Mobile Toggle
+======================================== */
+
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white-color);
+
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+
+    box-shadow: none !important;
+}
+
+
+/* Remove Bootstrap Default Icon */
+
+.navbar-toggler-icon {
+    width: auto;
+    height: auto;
+
+    background-image: none !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Hamburger Icon */
+
+.navbar-toggler-icon i {
+    color: var(--secondary-color);
+
+    font-size: 18px;
+
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon i {
+    color: var(--primary-color);
+}
+
+
+/* ========================================
+   Large Desktop
+======================================== */
+
+@media (min-width: 1200px) {
+
+    .custom-navbar {
+        min-height: 80px;
+    }
+
+    .logo-area {
+        width: 145px;
+        height: 58px;
+    }
+
+    .main-menu {
+        gap: 8px;
+    }
+
+    .main-menu .nav-link {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 991px) {
+
+    .custom-navbar {
+        min-height: 70px;
+
+        padding: 8px 0;
+    }
+
+
+    /* Logo */
+
+    .logo-area {
+        width: 130px;
+        height: 50px;
+    }
+
+
+    /* Mobile Menu */
+
+    .navbar-collapse {
+        margin-top: 15px;
+
+        padding: 15px;
+
+        background: var(--white-color);
+
+        border: 1px solid #eeeeee;
+
+        border-radius: 8px;
+
+        box-shadow:
+            0 8px 25px rgba(0, 0, 0, 0.06);
+    }
+
+
+    /* Navigation */
+
+    .main-menu {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 3px;
+
+        margin-bottom: 12px;
+    }
+
+    .main-menu .nav-item {
+        width: 100%;
+    }
+
+    .main-menu .nav-link {
+        width: 100%;
+
+        padding: 12px !important;
+
+        font-size: 12px;
+    }
+
+
+    /* Remove Underline on Mobile */
+
+    .main-menu .nav-link::after {
+        display: none;
+    }
+
+
+    /* Button */
+
+    .header-action {
+        width: 100%;
+
+        display: block;
+    }
+
+    .talk-btn {
+        width: 100%;
+
+        height: 38px;
+
+        font-size: 11px;
+    }
+
+    .talk-btn i {
+        font-size: 9px;
+    }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 575px) {
+
+    .custom-navbar {
+        min-height: 65px;
+
+        padding: 7px 0;
+    }
+
+
+    /* Logo */
+
+    .logo-area {
+        width: 120px;
+        height: 48px;
+    }
+
+
+    /* Hamburger */
+
+    .navbar-toggler {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 5px;
+    }
+
+    .navbar-toggler-icon i {
+        font-size: 16px;
+    }
+
+
+    /* Mobile Dropdown */
+
+    .navbar-collapse {
+        margin-top: 12px;
+
+        padding: 12px;
+    }
+}
+
+
+/* ========================================
+   Extra Small Mobile
+======================================== */
+
+@media (max-width: 375px) {
+
+    .logo-area {
+        width: 105px;
+        height: 43px;
+    }
+
+    .navbar-toggler {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+
+/* ========================================
+   Hero Section
+======================================== */
+
+.hero-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 820px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Background Image */
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+
+    /* object-fit: cover; */
+    object-position: center;
+}
+
+
+/* Dark Overlay */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(39, 35, 58, 0.88) 0%,
+            rgba(39, 35, 58, 0.72) 35%,
+            rgba(39, 35, 58, 0.35) 65%,
+            rgba(39, 35, 58, 0.15) 100%);
+}
+
+
+/* Content */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 620px;
+
+    padding: 100px 0;
+}
+
+
+/* Badge */
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    margin-bottom: 22px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: var(--white-color);
+
+    border: 1px solid rgba(245, 139, 130, 0.6);
+    border-radius: 4px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Title */
+
+.hero-title {
+    font-family: "Playfair Display", serif;
+
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    color: var(--white-color);
+
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.hero-desc {
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    max-width: 460px;
+
+    margin-bottom: 34px;
+}
+
+
+/* Button */
+
+.hero-btn {
+    padding: 16px 13px;
+    font-size: 16px;
+}
+
+
+
+
+/* ========================================
+   Hero Responsive
+======================================== */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: 560px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(180deg,
+                rgba(39, 35, 58, 0.55) 0%,
+                rgba(39, 35, 58, 0.85) 100%);
+    }
+
+    .hero-content {
+        max-width: 100%;
+
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .hero-section {
+        min-height: 480px;
+    }
+
+    .hero-content {
+        padding: 50px 0;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+}
