@@ -1077,3 +1077,237 @@ button,
         align-items: center;
     }
 }
+
+
+
+
+.about-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Left Image Styling */
+.image-wrapper {
+    position: relative;
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    height: 480px;
+}
+
+.bg-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    border: 4px solid #e87a71;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.main-img-box {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-img-box {
+    position: absolute;
+    left: -20px;
+    top: 30%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    z-index: 3;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Content Styling */
+.content-wrapper {
+    flex: 1;
+    min-width: 320px;
+}
+
+
+
+h2 {
+    font-size: 38px;
+    color: #2b1d38;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.description {
+    color: #7d7d7d;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2b1d38;
+}
+
+.features-list i {
+    color: #eb7c72;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #eb7c72;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d8685e;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: 380px;
+    }
+
+    .circle-img-box {
+        width: 130px;
+        height: 130px;
+        left: 0;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+
+/* --- Row Container styling --- */
+
+.trust-section{
+
+    margin: 50px auto;
+
+}
+
+
+.logo-row {
+   margin: 50px auto;
+}
+
+.logo-row:last-child {
+    margin-bottom: 0; /* No space below the last row */
+}
+
+/* --- Row Title styling (The line with text in the middle) --- */
+.row-title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px; /* Space between title and logos */
+}
+
+.row-title span {
+    background: #fcfcfc; /* Match this to the body background to "hide" the line */
+    padding: 0 20px; /* Creates the gap around the text */
+    color: #4a148c; /* Dark indigo/purple color from your image */
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* This pseudo-element creates the thin horizontal line */
+.row-title::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #e0e0e0; /* The line color */
+    width: 100%;
+    position: absolute;
+    top: 50%; /* Puts the line in the vertical center */
+    left: 0;
+    z-index: -1; /* Puts the line behind the text span */
+}
+
+/* --- Logo Grid styling (Using Flexbox for centering) --- */
+.logo-grid {
+    display: flex;
+    justify-content: center; /* Centers the logos horizontally */
+    align-items: center; /* Aligns logos of different heights in the center vertically */
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 40px; /* Uniform space between logos */
+}
+
+/* --- Logo Item styling --- */
+.logo-item {
+    text-align: center;
+}
+
+.logo-item img {
+    max-width: 120px; /* Maximum width a logo can take */
+    height: auto; /* Maintains aspect ratio */
+    filter: grayscale(100%); /* Makes all images gray/black as requested */
+    opacity: 0.7; /* Optional: adds subtle fading */
+    transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional: Slight opacity change on hover for interactivity */
+.logo-item img:hover {
+    opacity: 1;
+}
