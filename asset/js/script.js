@@ -1,75 +1,37 @@
-/* ========================================
- Client Experience Swiper
-========================================= */
-
-
 const clientSwiper = new Swiper(".clientSwiper", {
 
+    slidesPerView: 1.15,
+    spaceBetween: 20,
 
-slidesPerView:2,
+    loop: true,
 
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
 
-spaceBetween:20,
+    speed: 700,
 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
 
-loop:true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1.1,
+            spaceBetween: 15
+        },
 
+        768: {
+            slidesPerView: 1.3,
+            spaceBetween: 20
+        },
 
-autoplay:{
-
-
-delay:3000,
-
-
-disableOnInteraction:false
-
-
-},
-
-
-
-speed:700,
-
-
-
-pagination:{
-
-
-el:".swiper-pagination",
-
-
-clickable:true
-
-
-},
-
-
-
-breakpoints:{
-
-
-0:{
-
-
-slidesPerView:1
-
-
-},
-
-
-
-992:{
-
-
-slidesPerView:2
-
-
-}
-
-
-
-}
-
-
+        992: {
+            slidesPerView: 1.7,
+            spaceBetween: 25
+        }
+    }
 
 });
