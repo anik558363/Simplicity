@@ -95,18 +95,19 @@ button,
 
 .header-section {
     width: 100%;
-
     background: var(--white-color);
-
     border-top: 1px solid rgba(64, 55, 95, 0.08);
     border-bottom: 1px solid rgba(64, 55, 95, 0.08);
-
     box-shadow: 0 2px 15px var(--shadow-light);
-
     position: relative;
     z-index: 999;
+    max-width: 1920px;
+    margin: 0px auto;
+    height: 137px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 /* ========================================
    Navbar
@@ -241,6 +242,7 @@ button,
     align-items: center;
 
     flex-shrink: 0;
+    margin-right: 10px;
 }
 
 .talk-btn {
@@ -800,7 +802,7 @@ button,
 
     color: var(--secondary-color);
 
-    font-size: 35px;
+    font-size: 56px;
 
     line-height: 100%;
 
