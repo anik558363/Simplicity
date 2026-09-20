@@ -45,16 +45,20 @@
   <link rel="stylesheet" href="asset/css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -66,206 +70,66 @@
          Header Section Start
     ========================================= -->
 
-  <header class="header-section">
+  <header class="site-header">
+    <div class="header-container container-flow">
 
-    <div class="container-fluid px-2 px-md-5">
+      <a href="index.html" class="brand">
 
-      <nav class="navbar navbar-expand-lg custom-navbar">
-
-
-        <!-- ========================================
-                     Logo
-                ========================================= -->
-
-        <a class="navbar-brand logo-area" href="#">
-
-          <img src="asset/images/logo.jpg" alt="Simplicity Logo">
-
-        </a>
+        <img src="asset/images/logo.webp" alt="">
 
 
-        <!-- ========================================
-                     Mobile Toggle
-                ========================================= -->
+      </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="mainNav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-          <span class="navbar-toggler-icon">
-
-            <i class="fa-solid fa-bars"></i>
-
-          </span>
-
-        </button>
-
-
-        <!-- ========================================
-                     Navigation
-                ========================================= -->
-
-        <div class="collapse navbar-collapse" id="mainNavbar">
-
-
-          <!-- Main Menu -->
-
-          <ul class="navbar-nav mx-auto main-menu">
-
-
-            <!-- Home -->
-
-            <li class="nav-item">
-
-              <a class="nav-link active" href="#">
-                Home
-              </a>
-
-            </li>
-
-
-            <!-- About -->
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="#">
-                About
-              </a>
-
-            </li>
-
-
-            <!-- Solutions -->
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="#">
-                Solutions
-              </a>
-
-            </li>
-
-
-            <!-- Clients -->
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="#">
-                Clients
-              </a>
-
-            </li>
-
-
-            <!-- Contact -->
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="#">
-                Contact
-              </a>
-
-            </li>
-
-          </ul>
-
-
-          <!-- ========================================
-                         Let's Talk Button
-                    ========================================= -->
-
-          <div class="header-action">
-            <a href="#" class="talk-btn">
-
-              <span class="talk-text">Let's Talk</span>
-
-              <span class="talk-icon normal-icon">
-                <i class="fa-solid fa-arrow-up-right"></i>
-              </span>
-
-              <span class="talk-icon hover-icon">
-                <span class="fs-6">↗</span>
-              </span>
-
-            </a>
-          </div>
-
-
-        </div>
-
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#solutions" class="nav-link">About</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#testimonials" class="nav-link">Clients</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-    </div>
+      <a href="#contact" class="btn-talk">Let's Talk <img src="asset/images/arrow.webp" alt=""></a>
 
+    </div>
   </header>
 
-  <!-- ========================================
-         Header Section End
-    ========================================= -->
-
-
-  <!-- ========================================
-         Main Section Start
-    ========================================= -->
 
   <main>
 
 
+
+
     <!-- ========================================
-           Hero Section Start
-      ========================================= -->
-
-    <section class="hero-section">
-
-      <div class="hero-bg">
-        <img src="asset/images/hero-bg.jpg" alt="Enterprise consulting team">
-        <div class="hero-overlay"></div>
-      </div>
-
-      <div class="container ">
-
-
-
-        <div class="hero-content">
-
-          <span class="hero-badge">Enterprise Consulting</span>
-
-          <h1 class="hero-title">
-            Making Your Enterprise <br>
-            Run Simply
-          </h1>
-
-          <p class="hero-desc">
-            Orchestrating high-performance enterprise platforms,
-            AI agent governance, and end-to-end digital transformation.
-          </p>
+         Hero Section
+    ========================================= -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 hero-description">
+            <span class="hero-tag">Enterprise Consulting</span>
+            <h1 class="hero-title">Making Your Enterprise<br>Run Simply</h1>
+            <p class="hero-text">Orchestrating high-performance enterprise platforms, <br> AI agent governance, and
+              end-to-end digital <br> transformation.</p>
+            <div class="hero-btns">
+              <a href="#solutions" class="btn-explore">Explore Our Solutions
 
 
+                <img src="asset/images/arrow.webp" alt="">
 
-          <div class="header-action">
-            <a href="#" class="talk-btn px-3 py-3 hero-btn ">
-
-              <span class="talk-text">Explore Our Solutions</span>
-
-              <span class="talk-icon normal-icon">
-                <i class="fa-solid fa-arrow-up-right"></i>
-              </span>
-
-              <span class="talk-icon hover-icon">
-                <span class="fs-5">↗</span>
-              </span>
-
-            </a>
+              </a>
+            </div>
           </div>
-
         </div>
-
       </div>
 
     </section>
 
-    <!-- ========================================
-           Hero Section End
-      ========================================= -->
+
 
 
     <!-- ========================================
@@ -278,13 +142,15 @@
 
         <!-- Section Heading -->
 
+        <span class="offer-badge">
+          What We Offer
+        </span>
+
         <div class="offer-heading">
 
           <div class="offer-title-area">
 
-            <span class="offer-badge">
-              What We Offer
-            </span>
+
 
             <h2 class="offer-title">
               Enterprise Solutions Built
@@ -306,65 +172,11 @@
 
         </div>
 
-        <div class="card-container">
+        <div class="card-container ">
 
-          <!-- Card 1 -->
-          <div class="card card-1">
-            <div class="card-content">
-              <h2>Human Capital</h2>
-              <p>Helping organizations strengthen talent, leadership, organizational change, and workforce strategies.
-              </p>
-              <span class="number">01.</span>
-            </div>
-            <div class="image-area">
-
-              <img src="asset/images/Intersect_1.png" alt="Human Capital">
-
-              <img class="vector_1" src="asset/images/Vector_1.png" alt="Vector_1">
-
-            </div>
-            <div class="badge">
-              <i class="fa-solid fa-hands-holding-child"></i>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card card-2">
-            <div class="top-image-area">
-              <img src="asset/images/subtract.png" alt="Strategy">
-
-              <img class="vector_3" src="asset/images/vector_3.png" alt="">
-
-            </div>
-            <div class="card-content text-center">
-              <h2>Strategy & Operations</h2>
-              <p>Turning complex business challenges into practical strategies and executable plans.</p>
-              <span class="number">02.</span>
-            </div>
-            <div class="badge badge-center">
-              <i class="fa-solid fa-puzzle-piece"></i>
-            </div>
-          </div>
-
-          <div class="card card-3">
-            <div class="card-content">
-              <h2>AI & Enterprise Transformation</h2>
-              <p>Enterprise Platform Migrations, including SAP RISE and Oracle Cloud, plus Agentic AI Governance and
-                Digital Asset Deployment.
-              </p>
-              <span class="number">03.</span>
-            </div>
-            <div class="image-area">
-
-              <img src="asset/images/Intersect_2.png" alt="Human Capital">
-
-              <img class="vector_2" src="asset/images/Vector_2.png" alt="Vector_1">
-
-            </div>
-            <div class="badge badge-3">
-              <i class="fa-solid fa-gears"></i>
-            </div>
-          </div>
+          <img src="asset/images/frame1.webp" alt="">
+          <img class="frame-imge-2" src="asset/images/frame2.webp" alt="">
+          <img src="asset/images/frame3.webp" alt="">
 
         </div>
 
@@ -376,10 +188,10 @@
 
     </section>
 
-    <!-- ========================================
-     What We Offer Section End
-========================================= -->
 
+    <!-- ========================================
+     About Section Start
+========================================= -->
 
     <section class="about-section">
       <div class=" about-container">
@@ -387,12 +199,7 @@
         <!-- Left Side: Image Layout -->
         <div class="image-wrapper">
           <div class="bg-border"></div>
-          <div class="main-img-box">
-            <img src="asset/images/about-img-1.png" alt="Team Work" class="main-img" />
-          </div>
-          <div class="circle-img-box">
-            <img src="asset/images/circle-img.png" alt="Discussion" class="circle-img" />
-          </div>
+          <img src="asset/images/about-image.webp" alt="">
         </div>
 
         <!-- Right Side: Content Layout -->
@@ -412,35 +219,34 @@
 
           <ul class="features-list">
             <li>
-              <i class="fa-regular fa-circle-check"></i>
+              <img src="asset/images/right.webp" alt="">
               <span>Clear direction for complex business challenges.</span>
             </li>
             <li>
-              <i class="fa-regular fa-circle-check"></i>
+              <img src="asset/images/right.webp" alt="">
               <span>Technology-Driven Transformation</span>
             </li>
             <li>
-              <i class="fa-regular fa-circle-check"></i>
+              <img src="asset/images/right.webp" alt="">
               <span>Practical solutions designed around modern enterprise needs.</span>
             </li>
             <li>
-              <i class="fa-regular fa-circle-check"></i>
+              <img src="asset/images/right.webp" alt="">
               <span>Turning strategy and insights into actionable business outcomes</span>
             </li>
           </ul>
 
           <div class="header-action">
-            <a href="#" class="talk-btn px-3 py-3 hero-btn ">
+           
 
-              <span class="talk-text">Explore Our Solutions</span>
 
-              <span class="talk-icon normal-icon">
-                <i class="fa-solid fa-arrow-up-right"></i>
-              </span>
 
-              <span class="talk-icon hover-icon">
-                <span class="fs-5">↗</span>
-              </span>
+              <a href="#solutions" class="btn-explore">Explore Our Solutions
+
+
+                <img src="asset/images/arrow.webp" alt="">
+
+              </a>
 
             </a>
           </div>
@@ -460,11 +266,11 @@
 
         <div class="logo-grid">
           <!-- Replace '#' with the actual paths to your logo images -->
-          <div class="logo-item"><img src="asset/images/logo_item_1.png" alt="AltSource Logo"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_2.png" alt="Quicken Logo"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_3.png" alt="Just Salad Logo"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_4.png" alt="PBS Logo"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_5.png" alt="Insider Inc Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_1.webp" alt="AltSource Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_2.webp" alt="Quicken Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_3.webp" alt="Just Salad Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_4.webp" alt="PBS Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_5.webp" alt="Insider Inc Logo"></div>
         </div>
       </div>
 
@@ -476,12 +282,12 @@
 
         <div class="logo-grid">
           <!-- Replace '#' with the actual paths to your certification images -->
-          <div class="logo-item"><img src="asset/images/logo_item_6.png" alt="NIST Logo"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_7.png" alt="Lean Certified Badge"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_8.png" alt="CSM Scrum Master Badge"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_6.webp" alt="NIST Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_7.webp" alt="Lean Certified Badge"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_8.webp" alt="CSM Scrum Master Badge"></div>
 
-          <div class="logo-item"><img src="asset/images/logo_item_10.png" alt="Google Logo"></div>
-          <div class="logo-item"><img src="asset/images/logo_item_6.png" alt="AWS Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_6.webp" alt="Google Logo"></div>
+          <div class="logo-item"><img src="asset/images/logo_item_10.webp" alt="AWS Logo"></div>
         </div>
       </div>
 
@@ -489,552 +295,11 @@
     </section>
 
 
-    <!-- ========================================
-     Why Simplicity Section Start
-======================================== -->
 
-    <section class="why-section">
 
-      <div class="container why-container">
 
-        <div class="why-header">
 
-          <div class="why-header-left">
-            <span class="offer-badge why-badge">Why Simplicity?</span>
-            <h2 class="why-title">
-              Strategy Made Clear.<br>
-              Transformation Made Practical.
-            </h2>
-          </div>
 
-          <div class="why-header-right">
-            <p>
-              Clients choose us for our strategic clarity, disciplined execution, & commitment to
-              results. We act as long-term partners, helping organizations unlock new opportunities,
-              strengthen performance, & stay ahead in a competitive market.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="why-visual">
-
-          <div class="why-shape"></div>
-
-          <div class="why-img-wrap">
-            <img src="asset/images/why-chess.jpg" alt="Strategic planning">
-          </div>
-
-          <div class="why-card why-card-1">
-            <span class="why-card-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
-            <h3>Business-Focused Solutions</h3>
-            <p>Strategies aligned with each organization's priorities and challenges.</p>
-          </div>
-
-          <div class="why-card why-card-2 why-card-filled">
-            <span class="why-card-icon"><i class="fa-solid fa-gift"></i></span>
-            <h3>Insight-Driven Decisions</h3>
-            <p>Using analytics and industry insight to support smarter decision-making.</p>
-          </div>
-
-          <div class="why-card why-card-3">
-            <span class="why-card-icon why-card-icon-dark"><i class="fa-solid fa-diagram-project"></i></span>
-            <h3>Enterprise Perspective</h3>
-            <p>Connecting people, processes, technology and business strategy.</p>
-          </div>
-
-          <div class="why-card why-card-4 why-card-filled">
-            <span class="why-card-icon why-card-icon-dark"><i class="fa-solid fa-users"></i></span>
-            <h3>Execution-Oriented Approach</h3>
-            <p>Moving beyond recommendations toward practical implementation and results.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ========================================
-     Why Simplicity Section End
-======================================== -->
-
-
-
-
-    <!-- ========================================
-     Why solutions Section start
-========================================= -->
-
-    <section class="solutions-section">
-      <div class="container">
-
-        <div class="solutions-heading">
-          <span class="solutions-badge">Our Solutions</span>
-          <h2 class="solutions-title">
-            Solutions Designed Around<br>
-            Your Business
-          </h2>
-        </div>
-
-        <div class="solutions-grid">
-
-          <div class="solution-card">
-            <span class="solution-number">01.</span>
-            <div class="solution-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
-            <h3>Business Transformation</h3>
-            <p>Strategy, operating models and organizational transformation.</p>
-            <a href="#" class="solution-link">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
-          </div>
-
-          <div class="solution-card">
-            <span class="solution-number">02.</span>
-            <div class="solution-icon"><i class="fa-solid fa-chart-simple"></i></div>
-            <h3>Business Analytics</h3>
-            <p>Turning business data into practical and actionable insights.</p>
-            <a href="#" class="solution-link">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
-          </div>
-
-          <div class="solution-card">
-            <span class="solution-number">03.</span>
-            <div class="solution-icon"><i class="fa-solid fa-chess-knight"></i></div>
-            <h3>Strategic Planning</h3>
-            <p>Building strategies that respond to changing markets and business challenges.</p>
-            <a href="#" class="solution-link">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
-          </div>
-
-          <div class="solution-card">
-            <span class="solution-number">04.</span>
-            <div class="solution-icon"><i class="fa-solid fa-lightbulb"></i></div>
-            <h3>Digital Transformation</h3>
-            <p>Rethinking workflows, technology and how organizations create value.</p>
-            <a href="#" class="solution-link">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
-          </div>
-
-          <div class="solution-card">
-            <span class="solution-number">05.</span>
-            <div class="solution-icon"><i class="fa-solid fa-coins"></i></div>
-            <h3>Finance Transformation</h3>
-            <p>Helping finance organizations improve performance and operational efficiency.</p>
-            <a href="#" class="solution-link">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
-          </div>
-
-          <div class="solution-card">
-            <span class="solution-number">06.</span>
-            <div class="solution-icon"><i class="fa-solid fa-gauge-high"></i></div>
-            <h3>Scalable Operations</h3>
-            <p>Creating scalable and flexible approaches to service delivery.</p>
-            <a href="#" class="solution-link">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ========================================
-     Why solutions Section End
-========================================= -->
-
-
-
-
-    <section class="client-section">
-
-
-      <!-- Heading -->
-
-      <div class="client-heading text-center">
-        <span class="offer-badge">
-          Clients Feedback
-        </span>
-        <h2 class="client-title">
-
-          Client Experiences That Speak
-          <br>
-          for Themselves
-
-        </h2>
-      </div>
-
-
-
-      <div class="client-wrapper">
-
-
-
-        <!-- ========================================
- Client Image Area Start
-========================================= -->
-
-
-        <div class="client-image">
-
-
-
-
-
-
-          <img src="asset/images/customer.png" class="client-main-image" alt="Client">
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-        <!-- ========================================
- Client Image Area End
-========================================= -->
-
-
-
-
-
-
-
-
-        <!-- ========================================
- Client Slider Start
-========================================= -->
-
-
-        <div class="client-slider">
-
-
-          <div class="swiper clientSwiper">
-
-
-
-            <div class="swiper-wrapper">
-
-
-
-
-
-              <!-- Card 01 -->
-
-              <div class="swiper-slide">
-
-
-                <div class="review-card">
-
-
-
-                  <div class="rating">
-
-                    4.5 out of 5
-
-                  </div>
-
-
-
-                  <div class="quote">
-
-                    "
-
-                  </div>
-
-
-
-
-                  <div class="review-box">
-
-
-                    <h3>
-
-                      30% Reduction in Execution Bottlenecks
-
-                    </h3>
-
-
-                    <p>
-
-                      Streamlined legacy enterprise operations across
-                      12 business units, reducing execution bottlenecks
-                      by 30% while maintaining NIST compliance.
-
-                    </p>
-
-
-                  </div>
-
-
-
-
-
-
-                  <div class="review-user">
-
-
-                    <img src="asset/images/profile_1.png">
-
-
-                    <div>
-
-                      <small>
-                        Business Analyst
-                      </small>
-
-
-                      <strong>
-                        Jonathan William
-                      </strong>
-
-
-                    </div>
-
-
-                  </div>
-
-
-
-
-                </div>
-
-
-              </div>
-
-
-
-
-
-
-
-
-              <!-- Card 02 -->
-
-              <div class="swiper-slide">
-
-
-                <div class="review-card">
-
-
-
-                  <div class="rating">
-
-                    4.8 out of 5
-
-                  </div>
-
-
-
-                  <div class="quote">
-
-                    "
-
-                  </div>
-
-
-
-
-                  <div class="review-box">
-
-
-                    <h3>
-
-                      Enterprise Platform Modernization
-
-                    </h3>
-
-
-                    <p>
-
-                      Modernized complex platforms through SAP RISE
-                      and connected workflow solutions with scalable
-                      foundations.
-
-                    </p>
-
-
-                  </div>
-
-
-
-
-
-
-                  <div class="review-user">
-
-
-                    <img src="asset/images/profile_1.png">
-
-
-                    <div>
-
-                      <small>
-                        Founder & CEO
-                      </small>
-
-
-                      <strong>
-                        Emily Carter
-                      </strong>
-
-
-                    </div>
-
-
-                  </div>
-
-
-
-
-                </div>
-
-
-              </div>
-              <!-- Card 03 -->
-              <div class="swiper-slide">
-                <div class="review-card">
-                  <div class="rating">
-                    5.0 out of 5
-                  </div>
-                  <div class="quote">
-                    "
-                  </div>
-                  <div class="review-box">
-                    <h3>
-                      Business Transformation Success
-                    </h3>
-                    <p>
-                      Creating practical strategies and digital solutions
-                      that improve enterprise performance.
-                    </p>
-                  </div>
-                  <div class="review-user">
-                    <img src="asset/images/profile_1.png">
-                    <div>
-                      <small>
-                        Strategy Director
-                      </small>
-                      <strong>
-                        Michael Carter
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination text-start"></div>
-
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- ========================================
- Client Slider End
-========================================= -->
-
-
-
-
-      </div>
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-    <section class="contact-section">
-
-      <div class="container">
-
-
-        <div>
-          <span class="offer-badge">Contact Us</span>
-
-          <h2 class="contact-title">
-            Let's Build Your <br>
-            Success Together
-          </h2>
-        </div>
-
-        <div class="contact-wrapper">
-
-          <!-- Left: Form -->
-          <div class="contact-form-area">
-
-
-
-            <form class="contact-form">
-
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" placeholder="Name..">
-                </div>
-                <div class="form-group">
-                  <input type="email" placeholder="Email..">
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" placeholder="Phone..">
-                </div>
-                <div class="form-group">
-                  <select>
-                    <option selected disabled>Select Option..</option>
-                    <option>Business Transformation</option>
-                    <option>Business Analytics</option>
-                    <option>Strategic Planning</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group full">
-                <textarea rows="5" placeholder="Message.."></textarea>
-              </div>
-
-              <button type="submit" class="talk-btn contact-submit-btn">
-                <span class="talk-text">Submit Now</span>
-                <span class="talk-icon normal-icon">
-                  <i class="fa-solid fa-arrow-up-right"></i>
-                </span>
-              </button>
-
-            </form>
-
-          </div>
-
-          <!-- Right: Image -->
-          <div class="contact-image-area">
-
-            <div class="sparkle-icon">
-              <img class="ligtin_imge" src="asset/images/ligtin_imge.png" alt="">
-            </div>
-
-            <div class="contact-img-box">
-              <img src="asset/images/contact-img.jpg" alt="Team Discussion">
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ========================================
-     Contact Section End
-======================================== -->
 
   </main>
 
@@ -1051,108 +316,7 @@
      Footer Section Start
 ======================================== -->
 
-  <footer class="site-footer">
 
-    <div class="container">
-
-      <div class="footer-top">
-
-        <!-- Column 1: Logo + About -->
-        <div class="footer-col footer-brand">
-
-          <a href="#" class="footer-logo">
-            <img src="asset/images/logo-white.png" alt="Simplicity Logo">
-          </a>
-
-          <p class="footer-tagline">
-            Making your enterprise simple.
-          </p>
-
-          <p class="footer-desc">
-            Helping Organizations simplify strategy, technology
-            & transformation.
-          </p>
-
-          <div class="footer-social">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-
-        </div>
-
-        <!-- Column 2: Quick Links -->
-        <div class="footer-col">
-          <h4>Quick links</h4>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Privacy & Legal -->
-        <div class="footer-col">
-          <h4>Privacy & Legal</h4>
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">State Privacy Rights</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">Do Not call Policy</a></li>
-            <li><a href="#">SMS Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Contact + Subscribe -->
-        <div class="footer-col footer-contact">
-          <h4>Contact</h4>
-
-          <ul class="footer-contact-list">
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <span>901-279-9991</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <span>tdickson@simplicitybytracyinc.com</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <span>608 S 17th St<br>West Memphis, AR 72301</span>
-            </li>
-          </ul>
-
-          <form class="footer-subscribe">
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </form>
-
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <p class="footer-copyright">
-          © 2026 Simplicity by Tracy.INC. All Rights Reserved.
-        </p>
-
-        <ul class="footer-bottom-links">
-          <li><a href="#">Career</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-
-      </div>
-
-    </div>
-
-  </footer>
 
   <!-- ========================================
      Footer Section End
