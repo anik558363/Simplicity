@@ -917,14 +917,14 @@ button,
 ======================================== */
 
 .why-section {
-    
+
     height: 1080px;
     background-image: url('../images/why-section-bg.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
-   
+
 }
 
 
@@ -965,38 +965,38 @@ button,
 }
 
 
-.why-imag-contaner{
+.why-imag-contaner {
     display: flex;
     position: absolute;
 }
 
-.why-imag-contaner img{
+.why-imag-contaner img {
     width: 350px !important;
 }
 
-.why-imge-1{
+.why-imge-1 {
     position: absolute;
     top: -800px;
-    
+
     left: 70px;
 }
 
 
-.why-imge-2{
+.why-imge-2 {
     position: absolute;
     top: -526px;
     left: -5px;
 }
 
 
-.why-imge-3{
+.why-imge-3 {
     position: absolute;
     top: -539px;
     left: 1059px;
 }
 
 
-.why-imge-4{
+.why-imge-4 {
     position: relative;
     top: -870px;
     left: 930px;
@@ -1015,7 +1015,7 @@ button,
 }
 
 .section-tag-pill-center {
-      display: inline-flex;
+    display: inline-flex;
     font-family: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
@@ -1105,7 +1105,524 @@ button,
     margin-bottom: 22px;
 }
 
-.services-grid-section .btn-talk{
+.services-grid-section .btn-talk {
     display: flex;
     justify-content: space-between;
+}
+
+
+/* ========================================
+ Client Experience Section
+========================================= */
+
+
+.client-section {
+
+    padding: 100px 0;
+
+    background: #F5F5F5;
+
+}
+
+
+
+.client-heading {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+
+
+.client-title {
+
+  font-family: "Cormorant Garamond", serif;
+
+    font-size: 55px;
+
+    color: var(--secondary-color);
+
+    line-height: 66px;
+    letter-spacing: -1.11px;
+
+}
+
+
+
+
+/* Layout */
+
+
+.client-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 450px 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+
+
+/* Image */
+
+
+.client-image {
+
+    width: 380px;
+
+    height: 420px;
+
+    position: relative;
+
+}
+
+
+
+.circle-bg {
+
+    position: absolute;
+
+    width: 330px;
+
+    height: 330px;
+
+    background: #ffe500;
+
+    border-radius: 50%;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.client-main-image {
+    position: absolute;
+    width: 404px;
+    height: 428px;
+    object-fit: contain;
+    bottom: 0;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+
+
+.small-user {
+
+    position: absolute;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 3px solid #fff;
+
+    z-index: 3;
+
+}
+
+
+.small-user img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.user-1 {
+
+    top: 70px;
+
+    left: 20px;
+
+}
+
+
+.user-2 {
+
+    top: 150px;
+
+    right: 10px;
+
+}
+
+
+.user-3 {
+
+    bottom: 90px;
+
+    left: 30px;
+
+}
+
+
+
+
+
+
+
+/* Swiper */
+
+
+.client-slider {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+
+.clientSwiper {
+
+    width: 100%;
+
+}
+
+
+
+.swiper-slide {
+
+    height: auto;
+
+}
+
+
+
+
+
+
+/* Card */
+
+
+.review-card {
+
+    backgroundz: #F3F1EB;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 8px;
+
+    padding: 18px;
+
+    min-height: 240px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+
+    position: relative;
+
+}
+
+
+
+
+.rating {
+
+    font-size: 10px;
+
+    color: #777;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.quote {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 15px;
+
+    background: var(--primary-color);
+
+    color: #fff;
+
+    width: 28px;
+
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 5px;
+
+    font-size: 20px;
+
+}
+
+
+
+
+.review-box {
+
+    background: #F3F1EB;
+
+    padding: 27px;
+
+    border-radius: 22px;
+
+    height: 268px;
+    width: 662px;
+
+}
+
+
+
+.review-box h3 {
+
+       font-size: 26px;
+
+    line-height: 42px;
+    letter-spacing: 0px;
+
+    color: #2D3836;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.review-box p {
+
+    font-size: 26px;
+
+    line-height: 42px;
+    letter-spacing: 0px;
+
+    color: #2D3836;
+
+}
+
+
+
+
+.review-user {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+
+.review-user img {
+
+    width: 40px;
+
+    height: 40px;
+
+
+}
+
+
+
+.review-user small {
+
+    display: block;
+
+    font-size: 9px;
+
+    color: #999;
+
+}
+
+
+
+.review-user strong {
+
+    display: block;
+
+    font-size: 11px;
+
+    color: var(--secondary-color);
+
+}
+
+
+
+
+
+.swiper-pagination {
+
+    margin-top: 25px;
+
+    position: relative;
+
+}
+
+
+
+.swiper-pagination-bullet-active {
+
+    background: var(--primary-color);
+
+}
+
+
+
+
+
+
+@media(max-width:991px) {
+
+
+    .client-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .client-image {
+
+        margin: auto;
+
+    }
+
+
+}
+
+
+
+@media(max-width:575px) {
+
+
+    .client-title {
+
+        font-size: 25px;
+
+    }
+
+
+
+    .client-main-image {
+
+        width: 300px;
+
+    }
+
+
+}
+
+
+/* Dashed ring around image */
+.dashed-ring {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 2px dashed rgba(43, 29, 56, 0.35);
+    border-radius: 50%;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Yellow circle behind image (already defined, just tweak position) */
+.circle-bg {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #ffcf3f;
+    border-radius: 50%;
+    left: 60%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Small floating user avatars */
+.small-user {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .15);
+    z-index: 3;
+}
+
+.small-user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-1 {
+    top: 20px;
+    left: 0;
+}
+
+.user-2 {
+    top: 140px;
+    right: 0;
+}
+
+.user-3 {
+    bottom: 40px;
+    left: 10px;
+}
+
+/* Review user badge — dark rounded background */
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    background: var(--secondary-color);
+    padding: 10px 14px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.review-user small {
+    display: block;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.review-user strong {
+    display: block;
+    font-size: 11px;
+    color: #fff;
+}
+
+.clientSwiper {
+    width: 100%;
+    overflow: hidden;
 }
