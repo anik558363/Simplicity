@@ -60,24 +60,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
 
-  // ========================================
-  // Fixed header background on scroll
-  // ========================================
-  var siteHeader = document.querySelector(".site-header");
+//   // ========================================
+//   // Fixed header background on scroll
+//   // ========================================
+//   var siteHeader = document.querySelector(".site-header");
 
-  function toggleHeaderScrolled() {
-    if (window.scrollY > 20) {
-      siteHeader.classList.add("scrolled");
-    } else {
-      siteHeader.classList.remove("scrolled");
-    }
-  }
+//   function toggleHeaderScrolled() {
+//     if (window.scrollY > 20) {
+//       siteHeader.classList.add("scrolled");
+//     } else {
+//       siteHeader.classList.remove("scrolled");
+//     }
+//   }
 
-  if (siteHeader) {
-    window.addEventListener("scroll", toggleHeaderScrolled);
-    toggleHeaderScrolled(); // পেজ লোড হওয়ার সাথে সাথেই একবার চেক করবে
-  }
+//   if (siteHeader) {
+//     window.addEventListener("scroll", toggleHeaderScrolled);
+//     toggleHeaderScrolled(); // পেজ লোড হওয়ার সাথে সাথেই একবার চেক করবে
+//   }
 
-});
+// });

@@ -2505,7 +2505,7 @@ button,
 }
 
 
-
+/* 
 .site-header {
     position: fixed;
     top: 0;
@@ -2524,9 +2524,7 @@ button,
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Header fixed হয়ে যাওয়ায় content-টা header-এর নিচে চাপা পড়বে,
-   তাই body-তে header-এর height যতটুকু ততটুকু padding-top দিতে হবে */
+
 body {
     padding-top: 96px;
-    /* তোমার header-এর আসল height অনুযায়ী মান বদলাও (ইন্সপেক্টর দিয়ে মেপে নাও) */
-}
+} */
