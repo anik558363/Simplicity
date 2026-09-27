@@ -42,12 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ========================================
   // Auto active nav link based on current page
+  // (works with both relative and absolute href)
   // ========================================
   var navLinks = document.querySelectorAll(".main-nav .nav-link");
   var currentPage = window.location.pathname.split("/").pop() || "index.html";
 
   navLinks.forEach(function (link) {
-    var linkPage = link.getAttribute("href");
+    // link.href (property, getAttribute না) ব্রাউজার সবসময় resolve করে
+    // পূর্ণ absolute URL হিসেবে দেয়, তারপর সেখান থেকে শুধু ফাইলের নামটা বের করছি
+    var linkPage = new URL(link.href, window.location.origin).pathname.split("/").pop() || "index.html";
 
     if (linkPage === currentPage) {
       link.classList.add("active");
@@ -57,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
 
 
 // document.addEventListener("DOMContentLoaded", function () {
