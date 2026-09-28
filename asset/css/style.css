@@ -2278,6 +2278,20 @@ button,
     color: var(--primary-color);
 }
 
+
+/* ========================================
+   Process Card Hover Effect
+======================================== */
+
+.process-number {
+    transition: background 0.35s ease, color 0.35s ease;
+}
+
+.process-card:hover .process-number {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
 /* --- Responsive --- */
 
 @media (max-width: 991px) {
@@ -3111,4 +3125,83 @@ body {
     }
 
 
+}
+
+/* ========================================
+   Explore Button Hover Effect
+======================================== */
+
+.btn-explore {
+    transition: background 0.2s ease, gap 0.35s ease;
+}
+
+.btn-explore:hover {
+    transform: none;
+    gap: 20px;
+}
+
+/* --- Text roll --- */
+.btn-text {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.btn-text-inner {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.btn-text-inner::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+}
+
+.btn-explore:hover .btn-text-inner {
+    transform: translateY(-100%);
+}
+
+/* --- Arrow rotate --- */
+.btn-explore img {
+    transition: transform 0.35s ease;
+}
+
+.btn-explore:hover img {
+    transform: rotate(45deg);
+}
+
+
+
+/* ========================================
+   Talk Button Hover Effect
+======================================== */
+
+.btn-talk {
+    transition: background 0.2s ease, gap 0.35s ease;
+}
+
+.btn-talk:hover {
+    transform: none;
+    gap: 22px;
+}
+
+.btn-talk .btn-text {
+    line-height: 1.2;
+}
+
+.btn-talk:hover .btn-text-inner {
+    transform: translateY(-100%);
+}
+
+.btn-talk img {
+    transition: transform 0.35s ease;
+}
+
+.btn-talk:hover img {
+    transform: rotate(45deg);
 }
