@@ -84,7 +84,7 @@
 
             <a href="index.html" class="brand">
 
-                <img src="asset/images/logo.webp" alt="simplicity image">
+                <img src="asset/images/logo.webp" alt="">
 
 
             </a>
@@ -95,7 +95,7 @@
             </button>
 
             <nav class="main-nav" id="mainNav">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="solution.html" class="nav-link">Solutions</a>
                 <a href="client.html" class="nav-link">Clients</a>
@@ -106,7 +106,7 @@
                 <span class="btn-text">
                     <span class="btn-text-inner" data-text="Let's Talk">Let's Talk</span>
                 </span>
-                <img src="asset/images/nav_arrow.webp" alt="simplicity image">
+                <img src="asset/images/arrow.webp" alt="">
             </a>
         </div>
     </header>
@@ -117,7 +117,7 @@
 
         <section class="page-banner">
 
-            <img src="asset/images/contact-banner-bg.webp" alt="simplicity image">
+            <img src="asset/images/contact-banner-bg.webp" alt="">
 
         </section>
 
@@ -152,47 +152,47 @@
 
                     <!-- Right: Form -->
                     <div class="contact-form-area-new">
-                        <form class="contact-form-new">
+                        <form class="contact-form-new" id="contactForm">
+
+                            <!-- Honeypot field: keeps spam bots out, must stay hidden from real users -->
+                            <input type="text" name="website" class="form-honeypot" tabindex="-1" autocomplete="off">
 
                             <div class="form-row-new">
                                 <div class="form-group-new">
                                     <label>Your Name*</label>
-                                    <input type="text" placeholder="Name..">
+                                    <input type="text" name="name" placeholder="Name.." required>
                                 </div>
                                 <div class="form-group-new">
                                     <label>Your Email*</label>
-                                    <input type="email" placeholder="Email..">
+                                    <input type="email" name="email" placeholder="Email.." required>
                                 </div>
                             </div>
 
                             <div class="form-row-new">
                                 <div class="form-group-new">
                                     <label>Phone No*</label>
-                                    <input type="text" placeholder="Phone..">
+                                    <input type="text" name="phone" placeholder="Phone.." required>
                                 </div>
                                 <div class="form-group-new">
-                                    <label>Choose a Option*</label>
-                                    <select>
-                                        <option selected disabled>Select Option..</option>
-                                        <option>Business Transformation</option>
-                                        <option>Business Analytics</option>
-                                        <option>Strategic Planning</option>
-                                    </select>
+                                    <label>Subject*</label>
+                                    <input type="text" name="subject" placeholder="Subject.." required>
                                 </div>
                             </div>
 
                             <div class="form-group-new full">
                                 <label>Write Message*</label>
-                                <textarea rows="15" placeholder="Message.."></textarea>
+                                <textarea rows="15" name="message" placeholder="Message.." required></textarea>
                             </div>
 
+                            <div id="formStatus" class="form-status"></div>
+
                             <div>
-                                <a href="contact.html" class="btn-talk">
+                                <button type="submit" class="btn-talk" id="submitBtn">
                                     <span class="btn-text">
                                         <span class="btn-text-inner" data-text="Submit Now">Submit Now</span>
                                     </span>
-                                    <img src="asset/images/nav_arrow.webp" alt="simplicity image">
-                                </a>
+                                    <img src="asset/images/nav_arrow.webp" alt="">
+                                </button>
                             </div>
 
 
@@ -256,7 +256,7 @@
             <div class="footer-about">
                 <a href="index.html" class="brand footer-brand">
 
-                    <img src="asset/images/secondery_logo.webp" alt="simplicity image">
+                    <img src="asset/images/secondery_logo.webp" alt="">
 
 
                 </a>
@@ -275,44 +275,32 @@
             <div class="footer-col">
                 <h4>Quick links</h4>
                 <ul>
-                    <li><a href="index.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Home</a>
-                    </li>
-                    <li><a href="#about"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> About</a>
-                    </li>
-                    <li><a href="solution.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image">
-                            Solutions</a></li>
-                    <li><a href="client.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image">
-                            Clients</a></li>
-                    <li><a href="contact.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image">
-                            Contacts</a></li>
+                    <li><a href="index.html"> <img src="asset/images/footer_arrow.png" alt=""> Home</a></li>
+                    <li><a href="#about"> <img src="asset/images/footer_arrow.png" alt=""> About</a></li>
+                    <li><a href="solution.html"> <img src="asset/images/footer_arrow.png" alt=""> Solutions</a></li>
+                    <li><a href="client.html"> <img src="asset/images/footer_arrow.png" alt=""> Clients</a></li>
+                    <li><a href="contact.html"> <img src="asset/images/footer_arrow.png" alt=""> Contacts</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4>Privacy &amp; Legal</h4>
                 <ul>
-                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Privacy Policy</a>
-                    </li>
-                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> State Privacy
-                            Rights</a></li>
-                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Cookie Policy</a>
-                    </li>
-                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Do Not call
-                            Policy</a></li>
-                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> SMS Privacy
-                            Policy</a></li>
+                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt=""> Privacy Policy</a></li>
+                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt=""> State Privacy Rights</a></li>
+                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt=""> Cookie Policy</a></li>
+                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt=""> Do Not call Policy</a></li>
+                    <li><a href="#"> <img src="asset/images/footer_arrow.png" alt=""> SMS Privacy Policy</a></li>
                 </ul>
             </div>
 
             <div class="footer-col footer-contact-col">
                 <h4>Contact</h4>
                 <ul class="footer-contact">
-                    <li> <img src="asset/images/gg_phone.svg" alt="simplicity image"> 901-279-9391</li>
-                    <li> <img src="asset/images/fluent_mail-16-filled.png" alt="simplicity image">
-                        tdickson@simplicitybytracyinc.com
+                    <li> <img src="asset/images/gg_phone.svg" alt=""> 901-279-9391</li>
+                    <li> <img src="asset/images/fluent_mail-16-filled.png" alt=""> tdickson@simplicitybytracyinc.com
                     </li>
-                    <li> <img src="asset/images/boxicons_location-filled.png" alt="simplicity image"> 608 S 17th
-                        St<br>West Memphis, AR
+                    <li> <img src="asset/images/boxicons_location-filled.png" alt=""> 608 S 17th St<br>West Memphis, AR
                         72301</li>
                 </ul>
 
@@ -320,7 +308,7 @@
                     <button type="button" class="subscribe-btn">Subscribe</button>
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit" class="subscribe-send" aria-label="Subscribe">
-                        <img src="asset/images/group_19.svg" alt="simplicity image">
+                        <img src="asset/images/group_19.svg" alt="">
                     </button>
                 </form>
             </div>
@@ -348,6 +336,7 @@
 
     <!-- Custom JS -->
     <script src="asset/js/script.js"></script>
+    <script src="asset/js/contact-form.js"></script>
 
 </body>
 

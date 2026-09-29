@@ -345,6 +345,10 @@
 
 
 
+    <!-- ========================================
+   contact Section Start
+========================================= -->
+
     <section class="contact-section">
 
       <div class="container">
@@ -365,23 +369,23 @@
             <!-- Left: Form -->
             <div class="contact-form-area col-7">
 
-              <form class="contact-form">
+            <form class="contact-form" id="aboutContactForm">
 
                 <div class="form-row">
                   <div class="form-group">
-                    <input type="text" placeholder="Name..">
+                    <input type="text" name="name" placeholder="Name..">
                   </div>
                   <div class="form-group">
-                    <input type="email" placeholder="Email..">
+                    <input type="email" name="email" placeholder="Email..">
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="form-group">
-                    <input type="text" placeholder="Phone..">
+                    <input type="text" name="phone" placeholder="Phone..">
                   </div>
                   <div class="form-group">
-                    <select>
+                    <select name="subject">
                       <option selected disabled>Select Option..</option>
                       <option>Business Transformation</option>
                       <option>Business Analytics</option>
@@ -391,17 +395,22 @@
                 </div>
 
                 <div class="form-group full">
-                  <textarea rows="12" placeholder="Message.."></textarea>
+                  <textarea rows="12" name="message" placeholder="Message.."></textarea>
                 </div>
 
+                <!-- Honeypot — bot spam ঠেকাতে, ইউজার দেখবে না -->
+                <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
                 <div>
-                  <a href="contact.html" class="btn-talk">
+                  <button type="submit" class="btn-talk">
                     <span class="btn-text">
                       <span class="btn-text-inner" data-text="Submit Now">Submit Now</span>
                     </span>
                     <img src="asset/images/nav_arrow.webp" alt="simplicity image">
-                  </a>
+                  </button>
                 </div>
+
+                <div class="form-status"></div>
 
               </form>
 
@@ -422,7 +431,6 @@
       </div>
 
     </section>
-
 
   </main>
 
@@ -521,8 +529,12 @@
   <script src="asset/js/swiper-bundle.min.js"></script>
 
 
-  <!-- Custom JS -->
-  <script src="asset/js/script.js"></script>
+<!-- Custom JS -->
+<script src="asset/js/script.js"></script>
+
+<!-- Contact Form Handler -->
+<script src="asset/js/contact-form.js"></script>
+
 
 </body>
 
