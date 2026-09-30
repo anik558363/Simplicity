@@ -7,7 +7,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Simpli City</title>  <link rel="shortcut icon" href="asset/images/main-logo.webp" type="image/x-icon">
+    <title>Simpli City</title>
+    <link rel="shortcut icon" href="asset/images/main-logo.webp" type="image/x-icon">
 
 
 
@@ -101,12 +102,12 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
 
-      <a href="contact.html" class="btn-talk">
-  <span class="btn-text">
-    <span class="btn-text-inner" data-text="Let's Talk">Let's Talk</span>
-  </span>
-  <img src="asset/images/arrow.webp" alt="">
-</a>
+            <a href="contact.html" class="btn-talk">
+                <span class="btn-text">
+                    <span class="btn-text-inner" data-text="Let's Talk">Let's Talk</span>
+                </span>
+                <img src="asset/images/arrow.webp" alt="">
+            </a>
         </div>
     </header>
 
@@ -151,48 +152,48 @@
 
                     <!-- Right: Form -->
                     <div class="contact-form-area-new">
-                        <form class="contact-form-new">
+                        <form class="contact-form-new" id="contactForm">
+
+                            <!-- Honeypot field: keeps spam bots out, must stay hidden from real users -->
+                            <input type="text" name="website" class="form-honeypot" tabindex="-1" autocomplete="off">
 
                             <div class="form-row-new">
                                 <div class="form-group-new">
                                     <label>Your Name*</label>
-                                    <input type="text" placeholder="Name..">
+                                    <input type="text" name="name" placeholder="Name.." required>
                                 </div>
                                 <div class="form-group-new">
                                     <label>Your Email*</label>
-                                    <input type="email" placeholder="Email..">
+                                    <input type="email" name="email" placeholder="Email.." required>
                                 </div>
                             </div>
 
                             <div class="form-row-new">
                                 <div class="form-group-new">
                                     <label>Phone No*</label>
-                                    <input type="text" placeholder="Phone..">
+                                    <input type="text" name="phone" placeholder="Phone.." required>
                                 </div>
                                 <div class="form-group-new">
-                                    <label>Choose a Option*</label>
-                                    <select>
-                                        <option selected disabled>Select Option..</option>
-                                        <option>Business Transformation</option>
-                                        <option>Business Analytics</option>
-                                        <option>Strategic Planning</option>
-                                    </select>
+                                    <label>Subject*</label>
+                                    <input type="text" name="subject" placeholder="Subject.." required>
                                 </div>
                             </div>
 
                             <div class="form-group-new full">
                                 <label>Write Message*</label>
-                                <textarea rows="15" placeholder="Message.."></textarea>
+                                <textarea rows="15" name="message" placeholder="Message.." required></textarea>
                             </div>
 
-                                       <div>
-  <a href="contact.html" class="btn-talk">
-    <span class="btn-text">
-      <span class="btn-text-inner" data-text="Submit Now">Submit Now</span>
-    </span>
-    <img src="asset/images/arrow.webp" alt="">
-  </a>
-</div>
+                            <div id="formStatus" class="form-status"></div>
+
+                            <div>
+                                <button type="submit" class="btn-talk" id="submitBtn">
+                                    <span class="btn-text">
+                                        <span class="btn-text-inner" data-text="Submit Now">Submit Now</span>
+                                    </span>
+                                    <img src="asset/images/nav_arrow.webp" alt="">
+                                </button>
+                            </div>
 
 
 
@@ -205,37 +206,37 @@
      Contact Info Row
 ======================================== -->
 
-<div class="contact-info-row mt-5">
-  <div class="contact-info-card">
-    <span class="contact-info-icon"><i class="fa-solid fa-phone"></i></span>
-    <div class="contact-info-text">
-      <span>Have Question ?</span>
-      <strong>Free +880 (123) 456 789</strong>
-    </div>
-  </div>
+                <div class="contact-info-row mt-5">
+                    <div class="contact-info-card">
+                        <span class="contact-info-icon"><i class="fa-solid fa-phone"></i></span>
+                        <div class="contact-info-text">
+                            <span>Have Question ?</span>
+                            <strong>Free +880 (123) 456 789</strong>
+                        </div>
+                    </div>
 
-  <div class="contact-info-card">
-    <span class="contact-info-icon"><i class="fa-solid fa-envelope"></i></span>
-    <div class="contact-info-text">
-      <span>Write Email</span>
-      <strong>support@rovix.com</strong>
-    </div>
-  </div>
+                    <div class="contact-info-card">
+                        <span class="contact-info-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <div class="contact-info-text">
+                            <span>Write Email</span>
+                            <strong>support@rovix.com</strong>
+                        </div>
+                    </div>
 
-  <div class="contact-info-card">
-    <span class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></span>
-    <div class="contact-info-text">
-      <span>Our Location</span>
-      <strong>123 Fifth Avenue, New York</strong>
-    </div>
-  </div>
-</div>
-                
+                    <div class="contact-info-card">
+                        <span class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="contact-info-text">
+                            <span>Our Location</span>
+                            <strong>123 Fifth Avenue, New York</strong>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
 
-        
+
 
 
     </main>
@@ -255,7 +256,7 @@
             <div class="footer-about">
                 <a href="index.html" class="brand footer-brand">
 
-                    <img src="asset/images/secondery _logo.webp" alt="">
+                    <img src="asset/images/secondery_logo.webp" alt="">
 
 
                 </a>
@@ -335,6 +336,7 @@
 
     <!-- Custom JS -->
     <script src="asset/js/script.js"></script>
+    <script src="asset/js/contact-form.js"></script>
 
 </body>
 
