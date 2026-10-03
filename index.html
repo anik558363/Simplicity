@@ -104,7 +104,7 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <a href="contact.html" class="btn-talk">
+      <a href="contact.html" class="btn-talk d-none d-lg-flex">
         <span class="btn-text">
           <span class="btn-text-inner" data-text="Let's Talk">Let's Talk</span>
         </span>
@@ -186,9 +186,17 @@
 
         <div class="card-container ">
 
-          <img src="asset/images/frame1.webp" alt="simplicity image">
-          <img class="frame-imge-2" src="asset/images/frame2.webp" alt="simplicity image">
-          <img src="asset/images/frame3.webp" alt="simplicity image">
+          <img class="d-none d-lg-flex" src="asset/images/frame1.webp" alt="simplicity image">
+          <img class="frame-imge-2 d-none d-lg-flex" src="asset/images/frame2.webp" alt="simplicity image">
+          <img class="d-none d-lg-flex" src="asset/images/frame3.webp" alt="simplicity image">
+
+
+          <img class="d-flex d-lg-none" src="asset/images/frame_1.webp" alt="simplicity image">
+          <img class="d-flex d-lg-none" src="asset/images/frame_2.webp" alt="simplicity image">
+          <img class="d-flex d-lg-none" src="asset/images/frame_3.webp" alt="simplicity image">
+
+
+
 
         </div>
 
@@ -202,7 +210,7 @@
 ========================================= -->
 
     <section class="about-section">
-      <div class=" about-container">
+      <div class=" about-container container">
 
         <!-- Left Side: Image Layout -->
         <div class="image-wrapper">
@@ -306,7 +314,7 @@
     Why Section Section Start
 ========================================= -->
 
-    <section class="why-section">
+    <section class="why-section d-none d-lg-block">
       <div class="container why-container">
         <div class="why-header">
           <div class="why-header-left">
@@ -328,6 +336,8 @@
         <div class="why-imag">
           <img class="why-bg" src="/asset/images/why-bg.webp" alt="simplicity image">
           <div class="why-imag-contaner">
+
+
             <img class="why-imge-1" src="asset/images/why_img_1.webp" alt="simplicity image">
             <img class="why-imge-2" src="asset/images/why_img_2.webp" alt="simplicity image">
             <img class="why-imge-3" src="asset/images/why_img_3.webp" alt="simplicity image">
@@ -336,6 +346,10 @@
         </div>
       </div>
 
+    </section>
+
+    <section class="w-100">
+      <img class=" why_simplicity d-block d-lg-none" src="asset/images/why_simplicity.webp" alt="">
     </section>
 
 
@@ -472,7 +486,8 @@
       <div class="client-wrapper">
 
         <div class="client-image">
-          <img src="asset/images/customer.webp" class="client-main-image" alt="Client">
+          <img src="asset/images/customer.webp" class="client-main-image d-none d-lg-block"  alt="Client">
+          <img src="asset/images/customer_main.webp" class="client-main-mobile d-lg-none" alt="">
         </div>
 
         <div class="client-slider">
