@@ -19,7 +19,7 @@ const clientSwiper = new Swiper(".clientSwiper", {
 
     breakpoints: {
         0: {
-            slidesPerView: 1.1,
+            slidesPerView: 1,
             spaceBetween: 15
         },
 
@@ -62,24 +62,60 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-//   // ========================================
-//   // Fixed header background on scroll
-//   // ========================================
-//   var siteHeader = document.querySelector(".site-header");
+  // ========================================
+  // Fixed header background on scroll
+  // ========================================
+  var siteHeader = document.querySelector(".site-header");
 
-//   function toggleHeaderScrolled() {
-//     if (window.scrollY > 20) {
-//       siteHeader.classList.add("scrolled");
-//     } else {
-//       siteHeader.classList.remove("scrolled");
-//     }
-//   }
+  function toggleHeaderScrolled() {
+    if (window.scrollY > 20) {
+      siteHeader.classList.add("scrolled");
+    } else {
+      siteHeader.classList.remove("scrolled");
+    }
+  }
 
-//   if (siteHeader) {
-//     window.addEventListener("scroll", toggleHeaderScrolled);
-//     toggleHeaderScrolled(); // পেজ লোড হওয়ার সাথে সাথেই একবার চেক করবে
-//   }
+  if (siteHeader) {
+    window.addEventListener("scroll", toggleHeaderScrolled);
+    toggleHeaderScrolled(); // পেজ লোড হওয়ার সাথে সাথেই একবার চেক করবে
+  }
 
-// });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  // ========================================
+  // Mobile hamburger menu toggle
+  // ========================================
+  var navToggle = document.querySelector(".nav-toggle");
+  var mainNav = document.querySelector(".main-nav");
+  var navIcon = navToggle ? navToggle.querySelector("i") : null;
+
+  if (navToggle && mainNav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = mainNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+      if (navIcon) {
+        navIcon.classList.toggle("fa-bars", !isOpen);
+        navIcon.classList.toggle("fa-xmark", isOpen);
+      }
+    });
+
+    // Menu-er kono link-e click korle menu ta automatically bondho hoye jabe
+    mainNav.querySelectorAll(".nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mainNav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        if (navIcon) {
+          navIcon.classList.add("fa-bars");
+          navIcon.classList.remove("fa-xmark");
+        }
+      });
+    });
+  }
+
+});

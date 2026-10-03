@@ -433,7 +433,7 @@ button,
     font-size: 18px;
     font-weight: 600;
     color: var(--white-color);
-    border: 1px solid rgba(238, 139, 133, 0.7);
+    border: 2px solid rgba(238, 139, 133, 0.7);
     border-radius: 6px;
     padding: 10px 18px;
     margin-bottom: 34px;
@@ -579,7 +579,7 @@ button,
 .offer-title {
     font-family: "Cormorant Garamond", serif;
 
-    color: var(--secondary-color);
+    color: #351C51;
 
     font-size: 56px;
 
@@ -696,6 +696,17 @@ button,
     margin-top: 25px;
 }
 
+
+.card-container img {
+
+    border-radius: 1px;
+}
+
+.card-container img:hover {
+
+    box-shadow: 0 20px 40px #dad7d7;
+    border-radius: 10px;
+}
 
 
 .frame-imge-2 {
@@ -1757,9 +1768,11 @@ button,
     background: var(--primary-color);
     border-radius: 20px;
     z-index: 0;
-    top: -20px;
-    left: 38px;
+    top: -13px;
+    left: 36px;
+    margin-left: -8px;
 }
+
 
 .contact-img-box img {
     width: 100%;
@@ -1784,7 +1797,7 @@ button,
 }
 
 .contact-image {
-    height: 625px;
+    height: 617px;
     width: 100%;
     position: absolute;
 }
@@ -2531,7 +2544,7 @@ button,
 }
 
 
-/* 
+
 .site-header {
     position: fixed;
     top: 0;
@@ -2553,7 +2566,7 @@ button,
 
 body {
     padding-top: 96px;
-} */
+}
 
 
 
@@ -2630,6 +2643,7 @@ body {
 
 @media only screen and (min-width:1000px) and (max-width: 1650px) {
 
+
     html,
     body {
         overflow-x: hidden;
@@ -2641,7 +2655,13 @@ body {
         max-width: 1300px;
     }
 
+    .client-grow-section {
+        padding-top: 0px !important;
+    }
 
+    .page-banner {
+        height: 610px !important;
+    }
 
     /*  -------------------------------------Hero Section------------------------------------------------- */
 
@@ -2683,7 +2703,7 @@ body {
         font-size: 16px;
         font-weight: 600;
         color: var(--white-color);
-        border: 1px solid rgba(238, 139, 133, 0.7);
+        border: 2px solid rgba(238, 139, 133, 0.7);
         border-radius: 6px;
         padding: 10px 18px;
         margin-bottom: 34px;
@@ -3055,7 +3075,7 @@ body {
         line-height: 60px;
         letter-spacing: 1.24px;
         color: var(--secondary-color);
-        margin-bottom: 0px;
+        margin-bottom: 25px;
     }
 
     .contact-form-area {
@@ -3102,7 +3122,7 @@ body {
         position: relative;
         z-index: 1;
         top: 27px;
-        left: 110px;
+        left: 109px !important;
     }
 
     .process-number-wrap-two {
@@ -3111,7 +3131,7 @@ body {
         position: relative;
         z-index: 1;
         top: 27px;
-        left: 121px;
+        left: 121px !important;
     }
 
 
@@ -3122,6 +3142,14 @@ body {
         z-index: 1;
         top: 27px;
         left: 116px;
+    }
+
+
+    .about-section {
+
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 0px !important;
     }
 
 
@@ -3252,4 +3280,833 @@ body {
 #submitBtn[disabled] {
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+
+.client-grow-section {
+    padding-bottom: 0px !important;
+}
+
+
+
+/* ===========================================================
+   MOBILE RESPONSIVE — 300px to 500px devices
+   Paste this block at the very END of style.css (after every
+   other @media query) so it wins the cascade on small phones.
+   =========================================================== */
+
+@media (max-width: 500px) {
+
+    /* ---------- Base ---------- */
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    body {
+        padding-top: 72px;
+        /* matches the shorter fixed header below */
+    }
+
+
+    /* ---------- Header ---------- */
+    .site-header {
+        max-height: none;
+    }
+
+    .header-container {
+        padding: 10px 16px;
+        gap: 10px;
+    }
+
+    .brand img {
+        width: 140px;
+    }
+
+    .btn-talk {
+        padding: 10px 14px;
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .btn-talk img {
+        width: 14px;
+    }
+
+    .nav-toggle {
+        font-size: 18px;
+    }
+
+
+    .nav-link {
+        font-family: var(--font-heading);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+
+    /* ---------- Hero ---------- */
+    .hero-section {
+        height: auto;
+        min-height: 450px;
+        padding: 50px 0 40px;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-tag {
+        font-size: 10px;
+        width: auto;
+        height: auto;
+        padding: 8px 12px;
+        margin-bottom: 18px;
+        border: 1px solid rgba(238, 139, 133, 0.7);
+    }
+
+
+
+    .hero-title {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 98%;
+        letter-spacing: -1.7%;
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        max-width: 100%;
+        line-height: 155%;
+        letter-spacing: 0%;
+        margin-bottom: 15px;
+    }
+
+    .btn-explore img {
+        height: 10px;
+        width: 10px;
+    }
+
+
+    .hero-text br {
+        display: none;
+    }
+
+    .btn-explore {
+        font-size: 13px;
+        padding: 12px 18px;
+        gap: 8px;
+    }
+
+
+    /* ---------- What We Offer ---------- */
+    .offer-section {
+        height: auto;
+        padding: 45px 0 40px;
+    }
+
+    .offer-heading {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .offer-badge {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+
+    .offer-title {
+        font-size: 30px;
+        line-height: 122%;
+        font-weight: 600;
+        max-width: 100%;
+        letter-spacing: -1.5%;
+    }
+
+
+    .offer-title br {
+        display: none;
+    }
+
+    .offer-description p {
+        font-size: 15px;
+        max-width: 100%;
+        max-height: none;
+        font-weight: 400;
+        line-height: 165%;
+        letter-spacing: 0%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .card-container img {
+        width: 100%;
+    }
+
+    .frame-imge-2 {
+        top: 0;
+    }
+
+
+    /* ---------- About ---------- */
+    .about-section {
+        margin-top: 45px;
+    }
+
+    .about-container {
+        gap: 28px;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+    }
+
+    .about-container h2 {
+        width: 100%;
+        height: auto;
+        font-size: 26px;
+        line-height: 1.3;
+        letter-spacing: 0;
+        margin-bottom: 14px;
+    }
+
+    .description {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .features-list li {
+        font-size: 13px;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .content-wrapper {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    /* ---------- Trusted By / Certifications ---------- */
+    .trust-section {
+        margin: 45px auto;
+    }
+
+    .logo-row {
+        margin: 30px auto;
+    }
+
+    .row-title span {
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+
+    .logo-grid {
+        gap: 20px;
+    }
+
+    .logo-item img {
+        max-width: 52px;
+    }
+
+
+
+    /* ---------- Why Simplicity ---------- */
+    .why-section {
+        height: auto;
+        padding: 40px 0;
+        background-position: center;
+    }
+
+    .why-header {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin: 0 0 24px;
+    }
+
+    .why-title {
+        width: 100%;
+        height: auto;
+        font-size: 24px;
+        line-height: 1.3;
+        letter-spacing: 0;
+    }
+
+    .why-header-right p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .why_simplicity {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    /* The 4 decorative overlapping photos use large fixed offsets
+       that only make sense on wide screens — hide them on phones
+       and just keep the clean background instead. */
+    .why-imag {
+        position: relative;
+        height: 220px;
+    }
+
+    .why-imag-contaner {
+        display: none;
+    }
+
+    .why-bg {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+
+    /* ---------- Services Grid ---------- */
+    .services-grid-section {
+        padding: 50px 0 !important;
+    }
+
+    .services-title {
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        line-height: 1.3;
+        letter-spacing: 0;
+    }
+
+    .section-tag-pill-center {
+        display: inline-flex;
+        font-family: "Montserrat", sans-serif;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 22px;
+        margin-bottom: 14px;
+        background: #EE7873;
+        color: var(--white-color);
+        border-radius: 5.5px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+    }
+
+    .service-card {
+        padding: 20px 18px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+
+    .services-grid-section .btn-talk {
+        width: 100%;
+    }
+
+
+    /* ---------- Client / Testimonials ---------- */
+
+    .clientSwiper .swiper-pagination {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .client-main-mobile{
+
+    }
+
+
+    .client-section {
+        padding: 45px 0;
+    }
+
+    .client-heading {
+        margin-bottom: 30px;
+    }
+
+    .client-title {
+        font-size: 26px;
+        line-height: 1.3;
+        letter-spacing: 0;
+    }
+
+    .client-wrapper {
+        gap: 24px;
+    }
+
+    .client-image {
+        width: 100%;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .client-main-image {
+        width: 180px;
+        left: 50%;
+    }
+
+    .review-box {
+        padding: 16px;
+        height: auto;
+        min-height: 130px;
+    }
+
+    .review-box h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .review-box p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .review-user {
+        width: auto;
+        max-width: 100%;
+    }
+
+
+    .review-card {
+        border: 1px solid #e8e8e8;
+        border-radius: 8px;
+        padding: 18px;
+        min-height: 240px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+        position: relative;
+        margin: 15px;
+    }
+
+
+    .review-card .quote {width: 26px !important;height: 26px !important;margin-bottom: 20px;}
+
+
+    .rating {font-size: 8px;color: #7E7E7A;margin-bottom: 18px;font-weight: 600;line-height: 17px;letter-spacing: 0px;}
+
+   .logo-item img {
+        max-width: 41px;
+    }
+
+      .client-main-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 36px auto;
+        width: 325px;
+    }
+
+
+.client-slider {width: 100%;overflow: hidden;margin-top: 140px;}
+
+
+    /* ---------- Contact (old inline-image layout) ---------- */
+    .contact-section {
+        padding: 50px 0;
+        margin-bottom: 40px !important;
+    }
+
+    .contact-title {
+        font-size: 24px !important;
+        line-height: 1.3;
+        letter-spacing: 0;
+        margin-bottom: 18px !important;
+    }
+
+    .contact-wrapper {
+        gap: 24px;
+    }
+
+    .contact-form {
+        padding: 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group.full textarea {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+
+    .contact-image-area::before {
+        display: none;
+        /* decorative offset block — just adds overflow risk on phones */
+    }
+
+    .contact-img-box {
+        height: 220px;
+    }
+
+    .contact-image {
+        height: 240px;
+    }
+
+    .ligtin_imge {
+        display: none;
+    }
+
+
+    /* ---------- Contact (Map + Form layout) ---------- */
+    .contact-wrapper-new {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 24px;
+    }
+
+    .contact-map-area {
+        min-height: 220px;
+    }
+
+    .contact-map-area iframe {
+        min-height: 220px;
+    }
+
+    .contact-form-area-new {
+        padding: 18px;
+    }
+
+    .form-row-new {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 14px;
+    }
+
+    .form-group-new label {
+        font-size: 12px;
+    }
+
+    .form-group-new input,
+    .form-group-new select,
+    .form-group-new textarea {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+
+
+    /* ---------- Footer ---------- */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0 30px;
+    }
+
+    .footer-about {
+        margin-top: 0;
+    }
+
+    .footer-brand img {
+        width: 140px;
+    }
+
+    .footer-tagline,
+    .footer-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer-col h4 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .footer-col ul li a {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .footer-contact li {
+        font-size: 14px;
+    }
+
+    .footer-subscribe {
+        flex-wrap: wrap;
+    }
+
+    .footer-subscribe input {
+        min-width: 120px;
+    }
+
+    .footer-bottom-inner {
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    /* ---------- Grow / CTA ---------- */
+    .grow-section {
+        padding: 50px 0 40px;
+    }
+
+    .grow-title {
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+    }
+
+    .btn-contact-pill {
+        font-size: 13px !important;
+        padding: 10px 18px !important;
+    }
+
+
+    /* ---------- Page Banner (About / Solutions / Clients / Contact headers) ---------- */
+    .page-banner {
+        height: 160px !important;
+    }
+
+
+    /* ---------- Our Work Process ---------- */
+    .process-section {
+        padding: 45px 0;
+    }
+
+    .process-title {
+        font-size: 24px !important;
+        line-height: 1.35 !important;
+    }
+
+    .process-cards {
+        gap: 20px;
+    }
+
+    .process-card {
+        padding: 18px 16px;
+    }
+
+    .process-card h3 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 8px;
+    }
+
+    .process-card p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+
+    .process-number {
+        width: 72px;
+        height: 72px;
+        font-size: 16px;
+        border-width: 5px;
+    }
+
+    .process-number-wrap,
+    .process-number-wrap-one,
+    .process-number-wrap-two {
+        left: 0 !important;
+        top: 14px !important;
+        justify-content: flex-start;
+    }
+
+
+    /* ---------- Contact Info Row ---------- */
+    .contact-info-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-info-card {
+        padding: 14px 16px;
+    }
+
+}
+
+
+/* ===========================================================
+   EXTRA-SMALL PHONES — 300px to 360px
+   A second pass for the very narrowest screens.
+   =========================================================== */
+
+@media (max-width: 360px) {
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .offer-title {
+        font-size: 24px;
+    }
+
+    .about-container h2 {
+        font-size: 20px;
+    }
+
+    .why-title {
+        font-size: 20px;
+    }
+
+    .services-title {
+        font-size: 21px;
+    }
+
+    .client-title {
+        font-size: 21px;
+    }
+
+    .contact-title {
+        font-size: 20px !important;
+    }
+
+    .process-title {
+        font-size: 20px !important;
+    }
+
+    .brand img {
+        width: 120px;
+    }
+
+    .btn-talk .btn-text-inner,
+    .btn-explore .btn-text-inner {
+        font-size: 13px;
+    }
+
+}
+
+
+
+/* ========================================
+   Mobile Header Fix — Round Hamburger Button
+======================================== */
+
+.nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--white-color);
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.nav-toggle:hover {
+    background: var(--primary-hover);
+}
+
+.nav-toggle i {
+    pointer-events: none;
+}
+
+@media (max-width: 991px) {
+
+
+    .nav-toggle {
+        display: flex;
+        order: 2;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    .main-nav.open {
+        max-height: 300px;
+        padding: 18px 0 8px;
+    }
+
+    .btn-talk.d-none {
+        display: none !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .brand img {
+        width: 130px;
+    }
+
+    .nav-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .header-container {
+        padding: 10px 16px;
+        padding-bottom: 0px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .hero-section {
+        height: auto;
+        min-height: 400px;
+        padding: 50px 0 40px;
+    }
+
+
+    .logo-item img {
+        max-width: 41px;
+    }
+
+      .client-main-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 36px auto;
+        width: 292px;
+    }
+
+
+.client-slider {width: 100%;overflow: hidden;margin-top: 140px;}
+
+
 }
