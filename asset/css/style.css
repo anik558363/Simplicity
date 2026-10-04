@@ -4197,27 +4197,108 @@ body {
         letter-spacing: 0.5px;
     }
 
-    /* ---------- Responsive ---------- */
 
-    @media (max-width: 991px) {
-        .card-container {
-            flex-wrap: wrap;
-        }
 
-        .solution-card {
-            flex: 1 1 calc(50% - 15px);
-        }
+
+    /* ========================================
+   Why Simplicity — Mobile Card Layout
+======================================== */
+
+    .why-mobile {
+        display: none;
+        position: relative;
+        background: linear-gradient(180deg, #B45B65 0%, #5a3d6b 55%, #2c2140 100%);
+        padding: 40px 0 0;
+        overflow: hidden;
+    }
+
+    .why-mobile-badge {
+        margin-bottom: 16px;
+    }
+
+    .why-mobile-title {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.25;
+        color: var(--white-color);
+        margin-bottom: 16px;
+    }
+
+    .why-mobile-text {
+        font-family: var(--font-body);
+        font-size: 14px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 30px;
+    }
+
+    /* ========================================
+   Feature Card (single — dark variant)
+======================================== */
+
+
+.why-mobile-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.why-mobile-cards img{
+    width: 100%;
+}
+
+  .why-mobile-photo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+       margin: 0px auto;
+
+       margin-top: 40px;
     }
 
 
+   
 
 
 
 }
 
+
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 991px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .solution-card {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+
 /* --------------------------------------------------------------------------------------------------------------- */
 
 @media (min-width: 320px) and (max-width: 350px) {
+
+
+     .why-mobile-photo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 300px;
+       margin: 0px auto;
+       margin-top: 30px;
+    }
+
+
     .hero-section {
         height: auto;
         min-height: 400px;
