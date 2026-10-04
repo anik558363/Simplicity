@@ -73,7 +73,7 @@
 <body>
 
 
-   <!-- ========================================
+    <!-- ========================================
          Header Section Start
     ========================================= -->
 
@@ -100,7 +100,7 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <a href="contact.html" class="btn-talk">
+      <a href="contact.html" class="btn-talk d-none d-lg-flex">
         <span class="btn-text">
           <span class="btn-text-inner" data-text="Let's Talk">Let's Talk</span>
         </span>
@@ -108,6 +108,7 @@
       </a>
     </div>
   </header>
+
 
 
   <main>
@@ -171,6 +172,9 @@
     </section>
 
 
+  <!-- ========================================
+   client Section Start
+========================================= -->
 
     <section class="client-section">
 
@@ -187,7 +191,8 @@
       <div class="client-wrapper">
 
         <div class="client-image">
-          <img src="asset/images/customer.webp" class="client-main-image" alt="Client">
+          <img src="asset/images/customer.webp" class="client-main-image d-none d-lg-block" alt="Client">
+          <img src="asset/images/customer_main.webp" class="client-main-mobile d-lg-none" alt="">
         </div>
 
         <div class="client-slider">
@@ -313,6 +318,7 @@
     ========================================= -->
 
 
+ 
   <!-- ========================================
      Footer Section Start
 ======================================== -->
@@ -339,22 +345,24 @@
         </div>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col footer-col-links">
         <h4>Quick links</h4>
         <ul>
           <li><a href="index.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Home</a></li>
           <li><a href="about.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> About</a></li>
-          <li><a href="solution.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Solutions</a></li>
+          <li><a href="solution.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Solutions</a>
+          </li>
           <li><a href="client.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Clients</a></li>
           <li><a href="contact.html"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Contacts</a></li>
         </ul>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col footer-col-privacy ">
         <h4>Privacy &amp; Legal</h4>
         <ul>
           <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Privacy Policy</a></li>
-          <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> State Privacy Rights</a></li>
+          <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> State Privacy Rights</a>
+          </li>
           <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Cookie Policy</a></li>
           <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> Do Not call Policy</a></li>
           <li><a href="#"> <img src="asset/images/footer_arrow.png" alt="simplicity image"> SMS Privacy Policy</a></li>
@@ -365,8 +373,10 @@
         <h4>Contact</h4>
         <ul class="footer-contact">
           <li> <img src="asset/images/gg_phone.svg" alt="simplicity image"> 901-279-9391</li>
-          <li> <img src="asset/images/fluent_mail-16-filled.png" alt="simplicity image"> tdickson@simplicitybytracyinc.com</li>
-          <li> <img src="asset/images/boxicons_location-filled.png" alt="simplicity image"> 608 S 17th St<br>West Memphis, AR 72301</li>
+          <li> <img src="asset/images/fluent_mail-16-filled.png" alt="simplicity image">
+            tdickson@simplicitybytracyinc.com</li>
+          <li> <img src="asset/images/boxicons_location-filled.png" alt="simplicity image"> 608 S 17th St<br>West
+            Memphis, AR 72301</li>
         </ul>
 
         <form class="footer-subscribe" onsubmit="return false;">

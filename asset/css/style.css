@@ -2663,6 +2663,8 @@ body {
         height: 610px !important;
     }
 
+ 
+
     /*  -------------------------------------Hero Section------------------------------------------------- */
 
     .brand img {
@@ -3651,7 +3653,6 @@ body {
     }
 
 
-    .client-main-mobile {}
 
 
     .client-section {
@@ -3757,6 +3758,11 @@ body {
     .contact-section {
         padding: 50px 0;
         margin-bottom: 40px !important;
+        padding-top: 0px;
+    }
+
+    .extra-margin-remove {
+        margin-bottom: 0px !important;
     }
 
     .contact-title {
@@ -3916,7 +3922,7 @@ body {
 
     /* ---------- Page Banner (About / Solutions / Clients / Contact headers) ---------- */
     .page-banner {
-        height: 160px !important;
+        height: 100%;
     }
 
 
@@ -4238,31 +4244,31 @@ body {
 ======================================== */
 
 
-.why-mobile-cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-.why-mobile-cards img{
-    width: 100%;
-}
-
-  .why-mobile-photo {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-      
-       margin: 0px auto;
-
-       margin-top: 40px;
+    .why-mobile-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
 
-   
+    .why-mobile-cards img {
+        width: 100%;
+    }
+
+    .why-mobile-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0px auto;
+
+        margin-top: 40px;
+    }
+
+
+
 
 
 
@@ -4289,13 +4295,13 @@ body {
 @media (min-width: 320px) and (max-width: 350px) {
 
 
-     .why-mobile-photo {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       max-width: 300px;
-       margin: 0px auto;
-       margin-top: 30px;
+    .why-mobile-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        margin: 0px auto;
+        margin-top: 30px;
     }
 
 
@@ -4363,6 +4369,11 @@ body {
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 8px;
+        text-align: center;
+    }
+
+       .page-banner  img {
+        height: 220px !important;
     }
 
     .footer-desc {
@@ -4370,10 +4381,14 @@ body {
         line-height: 1.5;
         max-width: 560px !important;
         margin: 0 auto 18px;
-        text-align: start;
+       text-align: center;
     }
 
-
+.footer-social {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
 
 
     .footer-social a {
@@ -4456,6 +4471,8 @@ body {
         gap: 6px;
         text-align: center;
         padding: 18px 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-bottom-inner p {
